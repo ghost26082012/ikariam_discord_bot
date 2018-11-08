@@ -1,1 +1,1 @@
-worker: python3 ikabot.py
+worker: python3 bot.py
