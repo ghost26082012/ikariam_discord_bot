@@ -20,7 +20,7 @@ async def greet(ctx):
 async def exampleCommand(): # commands can also take paramenters this example takes none
                             # but if it does have paramenter when the command is called it'll need
                             # them or else the command won't work
-  
-  await client.say("Hello there!!")
+    await client.say("Hello there!!")
 
+    
 bot.run('NTA5NDg0MDc3ODkyNzYzNjQ4.DsYfWw.eveh1J-vwsXN3kZbXZyk2_gHu18')
