@@ -20,10 +20,10 @@ async def on_message(message):
     if message.author == client.user: # this is to prevent crashing via infinite loops
         return
       
-    #conditional branches for commands go below here
+#conditional branches for commands go below here
       
-    if message.content.startswith('!hello'): # a simple hello Command
-        msg = 'Hello {0.author.mention}'.format(message)
-        await client.send_message(message.channel, msg)
+if message.content.startswith('!hello'): # a simple hello Command
+    msg = 'Hello {0.author.mention}'.format(message)
+    await client.send_message(message.channel, msg)
     
 bot.run('NTA5NDg0MDc3ODkyNzYzNjQ4.DsYfWw.eveh1J-vwsXN3kZbXZyk2_gHu18')
