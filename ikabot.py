@@ -13,14 +13,17 @@ async def on_ready():
 @bot.command()
 async def greet(ctx):
     await ctx.send(":smiley: :wave: Hello, there!")
-    
-# This tell the Interpreter that this function is a command for discord
-@client.command(name="greet") # 'name' is literaly the name of the command
-                              # this is what you type after the prefix
-async def exampleCommand(): # commands can also take paramenters this example takes none
-                            # but if it does have paramenter when the command is called it'll need
-                            # them or else the command won't work
-    await client.say("Hello there!!")
 
+@client.event
+async def on_message(message):
+    # we do not want the bot to reply to itself
+    if message.author == client.user: # this is to prevent crashing via infinite loops
+        return
+      
+    #conditional branches for commands go below here
+      
+    if message.content.startswith('!hello'): # a simple hello Command
+        msg = 'Hello {0.author.mention}'.format(message)
+        await client.send_message(message.channel, msg)
     
 bot.run('NTA5NDg0MDc3ODkyNzYzNjQ4.DsYfWw.eveh1J-vwsXN3kZbXZyk2_gHu18')
