@@ -11,7 +11,7 @@ async def on_ready():
     print('Enter your command')
     
 @bot.command()
-"""Description of command goes here"""
+### Description of command goes here.
 async def hello():
     await bot.say('Hello')
 
