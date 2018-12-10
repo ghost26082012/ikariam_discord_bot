@@ -1,11 +1,9 @@
-#botLink: https://discordapp.com/api/oauth2/authorize?client_id=508476433513971722&permissions=8&scope=bot
-
 import discord
 from discord.ext import commands
 
 from ikalib import *
 
-token = "NTA4NDc2NDMzNTEzOTcxNzIy.DstWlA.GPMyIdjuirgQh3PwK6qiLpLDNLY"
+token = "NTE5NTg4MDQzMDc4NzYyNDk2.DuhgDw.TXFzYoAh-5DjwHePA0NY3Rz-SuM"
 
 resource_list = ["", "<:wine:511607612161130506>", "<:crystal:511607612039757824>", "<:crystal:511607612039757824>", "<:sulfur:511607612178038794>"]
 wonder_list = ["", "<:Hephaistos:512112680421687297>", "<:Hades:512112680459567107>", "<:Demeter:512112680027553794>", "<:Athenas:512112680186937344>", "<:Hermes:512112680413298718>", "<:Ares:512112680257978378>", "<:Poseidon:512112680577007616>", "<:Colossus:512112680513961994>"]
